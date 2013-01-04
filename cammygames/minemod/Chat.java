@@ -181,7 +181,27 @@ public class Chat implements IChatListener
               	   
               	   System.out.println("[CHAT FILTER]" + event.player.username + " Tried to say penis in the chat!");
                }      
-             
+               
+               if (containsIgnoreCase(event.message,"bitch"))
+               {
+            	   String var4 = "You where kicked by the chat filter for foul Language.";
+            	   
+            	   event.line = "\u00a7r" + "<" + event.player.username + ">" + " ## Censored ## ";
+              	   event.player.playerNetServerHandler.kickPlayerFromServer(var4); 
+              	   
+              	   System.out.println("[CHAT FILTER]" + event.player.username + " Tried to say bitch in the chat!");
+               }    
+               
+               if (containsIgnoreCase(event.message,"fuck off"))
+               {
+            	   String var4 = "You where kicked by the chat filter for foul Language.";
+            	   
+            	   event.line = "\u00a7r" + "<" + event.player.username + ">" + " ## Censored ## ";
+              	   event.player.playerNetServerHandler.kickPlayerFromServer(var4); 
+              	   
+              	   System.out.println("[CHAT FILTER]" + event.player.username + " Tried to say fuck off in the chat!");
+               }  
+               
                if (containsIgnoreCase(event.message,"cock"))
                {
             	   String var4 = "You where kicked by the chat filter for foul Language.";
@@ -191,7 +211,27 @@ public class Chat implements IChatListener
               	   
               	   System.out.println("[CHAT FILTER]" + event.player.username + " Tried to say cock in the chat!");
                }  
-             
+               
+               if (containsIgnoreCase(event.message,"fucks"))
+               {
+            	   String var4 = "You where kicked by the chat filter for foul Language.";
+            	   
+            	   event.line = "\u00a7r" + "<" + event.player.username + ">" + " ## Censored ## ";
+              	   event.player.playerNetServerHandler.kickPlayerFromServer(var4); 
+              	   
+              	   System.out.println("[CHAT FILTER]" + event.player.username + " Tried to say fucks in the chat!");
+               }  
+               
+               if (containsIgnoreCase(event.message,"cunts"))
+               {
+            	   String var4 = "You where kicked by the chat filter for foul Language.";
+            	   
+            	   event.line = "\u00a7r" + "<" + event.player.username + ">" + " ## Censored ## ";
+              	   event.player.playerNetServerHandler.kickPlayerFromServer(var4); 
+              	   
+              	   System.out.println("[CHAT FILTER]" + event.player.username + " Tried to say fucks in the chat!");
+               }  
+               
                if (containsIgnoreCase(event.message,"mother fucker"))
                {
             	   String var4 = "You where kicked by the chat filter for foul Language.";
